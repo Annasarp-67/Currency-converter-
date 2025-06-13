@@ -1,0 +1,66 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to right, #007574, #009999);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #007574;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+input, select, button {
+  padding: 12px 15px;
+  margin: 12px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #007574;
+  box-shadow: 0 0 8px rgba(0, 117, 116, 0.4);
+  outline: none;
+}
+
+button {
+  background-color: #007574;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #005f5e;
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  input, select, button {
+    font-size: 14px;
+  }
+}
